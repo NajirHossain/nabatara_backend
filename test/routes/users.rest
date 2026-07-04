@@ -1,0 +1,63 @@
+
+### signup API
+
+POST http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Subhajit",
+  "contact_no": "9999999999",
+  "email": "subha@example.com",
+  "password": "Changing123"
+}
+
+###
+
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "name": "Subhajit",
+  "contact_no": "9999999999",
+  "email": "subha@example.com",
+  "password": "Changing123"
+}
+
+
+
+### login API
+
+
+POST http://localhost:3001/api/v1/login
+Content-Type: application/json
+
+{
+  "email": "subha@example.com",
+  "contact_no": "91636146224",
+  "password": "Changing123"
+}
+
+
+
+### new payload
+
+POST http://localhost:3001/api/users/login
+Content-Type: application/json
+
+{
+  "contact_no": "1433437",
+  "password": "Changing123"
+}
+
+
+###
+
+POST http://localhost:3001/api/users/signup
+Content-Type: application/json
+
+{
+  "name": "Nirupam",
+  "contact_no": "231234456",
+  "email": "adnrj@gmail.com",
+  "password": "Changing123"
+}

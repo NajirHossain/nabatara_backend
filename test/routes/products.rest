@@ -1,0 +1,51 @@
+POST  http://localhost:3001/api/v1/products
+Content-Type: application/json
+
+{
+  "product_id": "prod_005",
+  "name": "Cold Pressed Coconut Oil",
+  "description": "Unrefined, chemical-free coconut oil extracted using cold press method",
+  "price": 9.49,
+  "stock_quantity": 75,
+  "is_active": true
+}
+
+
+###
+
+POST  http://localhost:3001/auth/signup
+Content-Type: application/json
+
+{
+  "username": "subha",
+  "email": "subh@gmail.com",
+  "password": "12345"
+}
+
+### 
+
+POST  http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+  "email": "subh@gmail.com",
+  "password": "12345"
+}
+
+
+###
+
+GET http://localhost:3001/api/v1/products/prod_002
+
+###
+
+PUT http://localhost:3001/api/v1/products/prod_003
+Content-Type: application/json
+
+{
+  "name": "Organic Honey",
+  "description": "Pure natural forest honey",
+  "price": 12.99,
+  "stock_quantity": 100,
+  "is_active": true
+}
